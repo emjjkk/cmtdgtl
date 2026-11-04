@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <title>Comet Digital</title>
     <style>
         :root {
-            color-scheme: dark;
+            color-scheme: light;
         }
 
         html {
@@ -19,19 +19,12 @@
 
         body {
             font-family: 'Hanken Grotesk', sans-serif;
-            background:
-                radial-gradient(circle at top left, rgba(224, 136, 47, 0.14), transparent 28%),
-                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08), transparent 26%),
-                linear-gradient(180deg, #08111f 0%, #0b1220 42%, #070b14 100%);
+            background: #fff;
+            color: #172033;
         }
 
         h1, h2, h3 {
             font-family: 'Fraunces', serif;
-        }
-
-        ::selection {
-            background: rgba(224, 136, 47, 0.28);
-            color: #fff;
         }
 
         *::-webkit-scrollbar {
@@ -44,18 +37,8 @@
         }
 
         .glass {
-            background: rgba(10, 16, 30, 0.58);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.24);
-        }
-
-        .noise {
-            background-image:
-                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-            background-size: 28px 28px;
-            mask-image: radial-gradient(circle at center, black 40%, transparent 85%);
+            background: #ffffff;
+            border: 1px solid #e2e2e2;
         }
 
         .section-anchor {
@@ -64,182 +47,182 @@
 
     </style>
 </head>
-<body class="text-white antialiased">
-    <div class="pointer-events-none fixed inset-0 noise opacity-40"></div>
+<body class="text-slate-800 antialiased">
 
     <main class="relative overflow-hidden">
-        <div class="absolute left-1/2 top-0 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-[#e0882f]/15 blur-3xl"></div>
-        <div class="absolute right-0 top-28 h-80 w-80 rounded-full bg-white/10 blur-3xl"></div>
-
-        <header class="sticky top-0 z-50 border-b border-white/8 bg-[#08111f]/80 backdrop-blur-xl">
+        <header class="fixed w-screen top-0 z-50 border-b border-neutral-900 bg-neutral-800 backdrop-blur-xl">
             <div class="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-6 py-4 md:px-10 lg:px-16">
                 <a href="#top" class="flex items-center gap-3">
                     <img src="./assets/logo.png" alt="Comet Digital" class="h-9 w-auto md:h-10">
                 </a>
 
-                <nav class="hidden items-center justify-center gap-8 text-sm text-white/75 md:flex md:justify-self-center">
-                    <a href="#about" class="transition hover:text-white">About</a>
-                    <a href="#services" class="transition hover:text-white">Services</a>
-                    <a href="#values" class="transition hover:text-white">Values</a>
-                    <a href="#contact" class="transition hover:text-white">Contact</a>
+                <nav class="hidden items-center justify-center gap-8 text-sm text-slate-200 md:flex md:justify-self-center">
+                    <a href="#about" class="transition hover:text-blue-400">About</a>
+                    <a href="#services" class="transition hover:text-blue-400">Services</a>
+                    <a href="#values" class="transition hover:text-blue-400">Values</a>
+                    <a href="#contact" class="transition hover:text-blue-400">Contact</a>
                 </nav>
 
-                <a href="#contact" class="rounded-[8px] border border-white/15 bg-white/8 px-4 py-2 text-sm font-medium text-white transition hover:border-white/30 hover:bg-white/12 justify-self-end">
+                <a href="#contact" class="justify-self-end rounded-lg border border-blue-200 bg-blue-50 px-4 py-2 text-sm font-medium text-blue-800 transition hover:border-blue-300 hover:bg-blue-100">
                     Request a Quote
                 </a>
             </div>
         </header>
 
-        <section id="top" class="section-anchor relative">
+        <section id="top" class="section-anchor relative pt-10">
             <div class="mx-auto grid min-h-[calc(100vh-82px)] max-w-7xl items-center gap-10 px-6 py-10 md:px-10 lg:grid-cols-2 lg:px-16 lg:py-8">
                 <div class="max-w-3xl">
-                    <div class="inline-flex items-center gap-2 rounded-[8px] border border-white/12 bg-white/6 px-3 py-1.5 text-[11px] uppercase tracking-[0.35em] text-white/70">
-                        <span class="h-2 w-2 rounded-full bg-[#e0882f]"></span>
-                        Established in 2019
-                    </div>
-
-                    <h1 class="mt-5 max-w-2xl text-3xl leading-[1.06] tracking-tight md:text-5xl lg:text-5xl">
-                        Digital services that help Kigali SMEs feel larger, sharper, and ready for what’s next.
+                    <h1 class="mt-20 max-w-2xl text-3xl leading-[1.06] tracking-tight md:text-5xl lg:text-5xl">
+                        Digital services that help SMEs feel larger, sharper, and ready for what's next.
                     </h1>
 
-                    <p class="mt-5 max-w-2xl text-base leading-relaxed text-white/76 md:text-lg">
+                    <p class="mt-5 max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
                         Comet Digital Limited empowers small and medium-sized businesses with accessible, high-quality digital solutions that bridge traditional operations and the modern digital landscape.
                     </p>
 
                     <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-                        <a href="#services" class="inline-flex items-center justify-center rounded-[8px] bg-[#e0882f] px-5 py-3 text-sm font-semibold text-[#08111f] transition hover:translate-y-[-1px] hover:bg-[#f0a24c]">
+                        <a href="#services" class="inline-flex items-center justify-center rounded-lg bg-orange-500 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600">
                             Explore services
                         </a>
-                        <a href="#about" class="inline-flex items-center justify-center rounded-[8px] border border-white/15 bg-white/6 px-5 py-3 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/10">
+                        <a href="#about" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50">
                             Learn about Comet Digital
                         </a>
                     </div>
                 </div>
 
                 <div class="relative lg:ml-auto lg:w-[92%]">
-                    <div class="absolute -left-4 -top-4 h-24 w-24 rounded-[8px] border border-white/10 bg-[#e0882f]/10 blur-2xl"></div>
+                    <div class="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-orange-200/50 blur-2xl"></div>
                     <div class="relative h-[480px] md:h-[540px]">
-                        <div class="absolute left-6 top-10 h-[78%] w-[72%] rounded-[8px] border border-white/12 bg-[linear-gradient(135deg,rgba(255,255,255,0.15),rgba(255,255,255,0.04)),url('https://playsignage.com/uploads/How_To_Make_Digital_Signage_Menu_Boards_aa811bdf1d.jpeg')] bg-cover bg-center shadow-2xl shadow-black/30"></div>
-                        <div class="absolute right-4 bottom-8 h-[62%] w-[66%] rounded-[8px] border border-white/12 bg-[linear-gradient(180deg,rgba(224,136,47,0.18),rgba(8,17,31,0.84)),url('./assets/1.png')] bg-cover bg-center shadow-2xl shadow-black/40"></div>
-                        <div class="absolute bottom-4 left-8 max-w-[240px] rounded-[8px] border border-white/12 bg-[#08111f]/80 px-4 py-3 backdrop-blur-md">
-                            <div class="flex items-center gap-1 text-[#f3b15f]" aria-label="5 out of 5 stars">
+                        <div class="absolute left-6 top-10 h-[78%] w-[72%] rounded-2xl border border-white bg-[url('https://playsignage.com/uploads/How_To_Make_Digital_Signage_Menu_Boards_aa811bdf1d.jpeg')] bg-cover bg-center"></div>
+                        <div class="absolute right-4 bottom-8 h-[62%] w-[66%] rounded-2xl border border-white bg-[url('./assets/1.png')] bg-cover bg-center"></div>
+                        <div class="absolute bottom-4 left-8 max-w-[240px] rounded-xl border border-slate-200 bg-white/95 px-4 py-3">
+                            <div class="flex items-center gap-1 text-orange-500" aria-label="5 out of 5 stars">
                                 <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.59 5.24 5.78.84-4.19 4.08.99 5.76L10 14.84 4.83 17.52l.99-5.76-4.19-4.08 5.78-.84L10 1.6z"/></svg>
                                 <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.59 5.24 5.78.84-4.19 4.08.99 5.76L10 14.84 4.83 17.52l.99-5.76-4.19-4.08 5.78-.84L10 1.6z"/></svg>
                                 <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.59 5.24 5.78.84-4.19 4.08.99 5.76L10 14.84 4.83 17.52l.99-5.76-4.19-4.08 5.78-.84L10 1.6z"/></svg>
                                 <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.59 5.24 5.78.84-4.19 4.08.99 5.76L10 14.84 4.83 17.52l.99-5.76-4.19-4.08 5.78-.84L10 1.6z"/></svg>
                                 <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.6l2.59 5.24 5.78.84-4.19 4.08.99 5.76L10 14.84 4.83 17.52l.99-5.76-4.19-4.08 5.78-.84L10 1.6z"/></svg>
                             </div>
-                            <p class="mt-2 text-sm leading-6 text-white/80">"Comet Digital made our digital signage feel premium, clear, and effortless from day one."</p>
-                            <p class="mt-2 text-[11px] uppercase text-white/45">Operations lead, TW FOODS</p>
+                            <p class="mt-2 text-sm leading-6 text-slate-600">"Comet Digital made our digital signage feel premium, clear, and effortless from day one."</p>
+                            <p class="mt-2 text-[11px] uppercase text-slate-400">Operations lead, TW FOODS</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="section-anchor border-t border-white/8 bg-white/3">
+        <section id="about" class="section-anchor border-t border-slate-200 bg-neutral-100">
             <div class="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-16 lg:py-20">
                 <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
                     <div>
-                        <p class="text-[11px] uppercase tracking-[0.35em] text-white/45">About us</p>
+                        <p class="text-[11px] uppercase tracking-[0.35em] text-blue-600">About us</p>
                         <h2 class="mt-4 text-2xl leading-tight md:text-4xl">Built to help local businesses compete with confidence.</h2>
                     </div>
 
-                    <div class="text-base leading-7 text-white/78">
+                    <div class="text-base leading-7 text-slate-600">
                         <p>
                             Established in 2019, Comet Digital Limited was founded with a mission to empower Small and Medium-Sized Enterprises (SMEs) across Kigali by providing accessible, high-quality digital solutions. Since our inception, we have dedicated ourselves to helping local businesses bridge the gap between traditional operations and the modern digital landscape.
                         </p>
                         <p class="mt-4">
-                            By combining technical expertise with a deep understanding of the Rwandan market, we enable our clients to enhance their brand presence and streamline customer interactions through reliable and innovative technology. From local eateries to established hotels, we partner with our clients to transform physical spaces into engaging digital environments that keep Kigali’s business community vibrant, modern, and tech-driven.
+                            By combining technical expertise with a deep understanding of the Rwandan market, we enable our clients to enhance their brand presence and streamline customer interactions through reliable and innovative technology. From local eateries to established hotels, we partner with our clients to transform physical spaces into engaging digital environments that keep Kigaliâ€™s business community vibrant, modern, and tech-driven.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="section-anchor border-t border-white/8">
+        <section id="services" class="section-anchor border-t border-slate-200 bg-neutral-100">
             <div class="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-16 lg:py-20">
                 <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                     <div class="max-w-2xl">
-                        <p class="text-[11px] uppercase tracking-[0.35em] text-white/45">Our services</p>
+                        <p class="text-[11px] uppercase tracking-[0.35em] text-blue-600">Our services</p>
                         <h2 class="mt-4 text-2xl leading-tight md:text-4xl">One partner for signage, websites, and customer-facing systems.</h2>
                     </div>
-                    <p class="max-w-xl text-sm leading-6 text-white/62 md:text-right">
+                    <p class="max-w-xl text-sm leading-6 text-slate-500 md:text-right">
                         We design end-to-back digital solutions that elevate hospitality and retail, helping SMEs modernize storefronts and build stronger online presence.
                     </p>
                 </div>
 
                 <div class="mt-8 grid gap-4 lg:grid-cols-3">
-                    <article class="glass rounded-[8px] p-6 transition duration-300 hover:-translate-y-1 hover:border-white/20">
-                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-[8px] border border-white/12 bg-[#08111f]">
+                    <article class="glass rounded-xl p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-200">
+                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
                             <img src="https://playsignage.com/uploads/How_To_Make_Digital_Signage_Menu_Boards_aa811bdf1d.jpeg" alt="Digital menu display preview" class="h-full w-full object-cover object-center opacity-90">
-                            
+
                         </div>
                         <h3 class="mt-5 text-xl">Digital menu solutions</h3>
-                        <p class="mt-3 text-sm leading-6 text-white/72">
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
                             Dynamic digital signage for restaurants and hotels that keeps content fresh, engaging, and easy to update.
                         </p>
+                        <a href="./digital-menu-signage.html" class="mt-5 inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600">
+                            Explore service
+                        </a>
                     </article>
 
-                    <article class="glass rounded-[8px] p-6 transition duration-300 hover:-translate-y-1 hover:border-white/20">
-                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-[8px] border border-white/12 bg-[#08111f]">
+                    <article class="glass rounded-xl p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-200">
+                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dOv2IheH83zzmSglcJSgU0lDPEAYLpOzIa7t7mGJie1YqpKxG58U9js&s=10" alt="Menu light box preview" class="h-full w-full object-cover object-[center_30%] opacity-88">
                         </div>
                         <h3 class="mt-5 text-xl">Home Automation Solutions</h3>
-                        <p class="mt-3 text-sm leading-6 text-white/72">
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
                             Home automation solutions that enhance convenience, security, and energy efficiency for residential and commercial spaces.
                         </p>
+                        <a href="./smart-living-automation.html" class="mt-5 inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600">
+                            Explore service
+                        </a>
                     </article>
 
-                    <article class="glass rounded-[8px] p-6 transition duration-300 hover:-translate-y-1 hover:border-white/20">
-                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-[8px] border border-white/12 bg-[#08111f]">
+                    <article class="glass rounded-xl p-6 transition duration-300 hover:-translate-y-1 hover:border-blue-200">
+                        <div class="mb-4 aspect-[16/9] overflow-hidden rounded-xl border border-slate-200 bg-slate-100">
                             <img src="https://www.designveloper.com/wp-content/uploads/2021/07/Web-Design-and-Development-Thumbnail-2-1024x640.jpg" alt="Custom website preview" class="h-full w-full object-cover object-[center_70%] opacity-88 brightness-90 contrast-110">
                         </div>
                         <h3 class="mt-5 text-xl">Custom web development</h3>
-                        <p class="mt-3 text-sm leading-6 text-white/72">
+                        <p class="mt-3 text-sm leading-6 text-slate-600">
                             Tailored websites that reflect your brand, support growth, and turn casual visitors into engaged customers.
                         </p>
+                        <a href="./custom-web-development.html" class="mt-5 inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-orange-600">
+                            Explore service
+                        </a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="values" class="section-anchor border-t border-white/8 bg-white/3">
+        <section id="values" class="section-anchor border-t border-slate-200 bg-neutral-100">
             <div class="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-16 lg:py-20">
                 <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
                     <div>
-                        <p class="text-[11px] uppercase tracking-[0.35em] text-white/45">Our core values</p>
+                        <p class="text-[11px] uppercase tracking-[0.35em] text-blue-600">Our core values</p>
                         <h2 class="mt-4 text-2xl leading-tight md:text-4xl">Three principles guide every build.</h2>
                     </div>
 
                     <div class="grid gap-5">
-                        <div class="glass rounded-[8px] p-5 md:p-6">
+                        <div class="glass rounded-xl p-5 md:p-6">
                             <div class="flex flex-wrap items-center justify-between gap-3">
                                 <h3 class="text-xl">Innovation for All</h3>
-                                <span class="rounded-full border border-white/12 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/55">01</span>
+                                <span class="rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-orange-600">01</span>
                             </div>
-                            <p class="mt-3 max-w-3xl text-sm leading-6 text-white/74">
+                            <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
                                 We bring high-tech solutions like IoT and digital signage to businesses of all sizes, ensuring no SME is left behind in the digital age.
                             </p>
                         </div>
 
-                        <div class="glass rounded-[8px] p-5 md:p-6">
+                        <div class="glass rounded-xl p-5 md:p-6">
                             <div class="flex flex-wrap items-center justify-between gap-3">
                                 <h3 class="text-xl">Integrity &amp; Reliability</h3>
-                                <span class="rounded-full border border-white/12 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/55">02</span>
+                                <span class="rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-orange-600">02</span>
                             </div>
-                            <p class="mt-3 max-w-3xl text-sm leading-6 text-white/74">
+                            <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
                                 Founded on the belief that strong character builds strong businesses, we provide honest pricing and dependable support.
                             </p>
                         </div>
 
-                        <div class="glass rounded-[8px] p-5 md:p-6">
+                        <div class="glass rounded-xl p-5 md:p-6">
                             <div class="flex flex-wrap items-center justify-between gap-3">
                                 <h3 class="text-xl">Efficiency</h3>
-                                <span class="rounded-full border border-white/12 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-white/55">03</span>
+                                <span class="rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-[11px] uppercase tracking-[0.25em] text-orange-600">03</span>
                             </div>
-                            <p class="mt-3 max-w-3xl text-sm leading-6 text-white/74">
-                                Whether it’s through a digital menu or a smart energy switch, our goal is to save clients time and reduce operational costs.
+                            <p class="mt-3 max-w-3xl text-sm leading-6 text-slate-600">
+                                Whether itâ€™s through a digital menu or a smart energy switch, our goal is to save clients time and reduce operational costs.
                             </p>
                         </div>
                     </div>
@@ -247,31 +230,33 @@
             </div>
         </section>
 
-        <section id="contact" class="section-anchor border-t border-white/8">
+        <section id="contact" class="section-anchor border-t border-slate-200 bg-neutral-800 text-white">
             <div class="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-16 lg:py-20">
                 <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
                     <div>
-                        <p class="text-[11px] uppercase tracking-[0.35em] text-white/45">Start a conversation</p>
-                        <h2 class="mt-4 text-2xl leading-tight md:text-4xl">If you want a sharper storefront or a better digital presence, we should talk.</h2>
-                        <p class="mt-4 max-w-2xl text-sm leading-6 text-white/72 md:text-base">
+                        <h2 class="text-2xl leading-tight md:text-4xl">If you want a sharper storefront or a better digital presence, we should talk.</h2>
+                        <p class="mt-4 max-w-2xl text-sm leading-6 md:text-base">
                             Comet Digital Limited works with Kigali businesses that want practical digital tools delivered with care, clarity, and a premium finish.
                         </p>
                     </div>
 
-                    <div class="border-t border-white/10 pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
-                        <p class="text-[11px] uppercase tracking-[0.35em] text-white/45">Contact</p>
-                        <a href="mailto:info@cometdigital.rw" class="mt-4 block text-xl font-medium text-white transition hover:text-[#f3b15f]">
+                    <div class="border-t border-slate-200 pt-6 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0">
+                        <p class="text-[11px] uppercase tracking-[0.35em] text-blue-400">Contact</p>
+                        <a href="mailto:info@cometdigital.rw" class="mt-4 block text-xl font-medium transition hover:text-orange-600">
                             info@cometdigital.rw
                         </a>
-                        <p class="mt-3 text-xs leading-6 text-white/60">
+                        <a href="tel:+250785089707" class="mt-4 block text-xl font-medium transition hover:text-orange-600">
+                            +250 785 089 707
+                        </a>
+                        <p class="mt-3 text-xs leading-6">
                             Kigali, Rwanda
                         </p>
 
                         <div class="mt-5 flex flex-col gap-3 sm:flex-row">
-                            <a href="mailto:info@cometdigital.rw" class="inline-flex items-center justify-center rounded-[8px] bg-white px-4 py-2.5 text-sm font-semibold text-[#08111f] transition hover:bg-[#f3b15f]">
+                            <a href="mailto:info@cometdigital.rw" class="inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-orange-600">
                                 Email us
                             </a>
-                            <a href="#top" class="inline-flex items-center justify-center rounded-[8px] border border-white/12 bg-white/5 px-4 py-2.5 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">
+                            <a href="#top" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-blue-300 hover:bg-blue-50">
                                 Back to top
                             </a>
                         </div>
@@ -280,8 +265,8 @@
             </div>
         </section>
 
-        <footer class="border-t border-white/8">
-            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-xs text-white/55 md:flex-row md:items-center md:justify-between md:px-10 lg:px-16">
+        <footer class="border-t bg-black">
+            <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-5 text-xs text-slate-500 md:flex-row md:items-center md:justify-between md:px-10 lg:px-16">
                 <p>&copy; 2026 Comet Digital Limited. Rwanda - All rights reserved.</p>
                 <p>Built to feel modern, calm, and unmistakably premium.</p>
             </div>
